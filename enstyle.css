@@ -1,0 +1,39 @@
+/* Enrollment Form CSS code */
+form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2em;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"] {
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 1em;
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 1em;
+	font-size: 1em;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #555;
+}

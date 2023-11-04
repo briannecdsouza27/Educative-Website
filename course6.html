@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>College Website</title>
+        <link rel="stylesheet" href="c1style.css">
+    </head>
+    <body>
+       <section class="header">
+           <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+           </nav>
+           <main>
+            <div id="myText"></div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" >
+         </script>
+                <script src=https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js></script>
+                    </script>
+                    <script>
+                        var text=document.getElementById("myText");
+                        var typewriter=new Typewriter(text,{
+                            loop:true
+                        });
+                        typewriter.typeString('Data Mining' )
+                        .pauseFor(1000)
+                        .start();
+            </script>
+            <img src="images/dm.webp" alt="Course Image">
+            <p>This is a description of the course.</p>
+            <p>Data mining methodology extracts hidden predictive information from large databases. With such a broad definition, however, an online analytical processing (OLAP) product or a statistical package could qualify as a data mining tool. Retail companies and the financial community are using data mining to analyze data and recognize trends to increase their customer base, 
+                predict fluctuations in interest rates, stock prices, and customer demand.</p>
+            <ul>
+                <li>Duration: 6 weeks</li>
+                <li>Instructor: John Doe</li>
+                <li>Level: Intermediate</li>
+                <li>Price: $100</li>
+            </ul>
+            <h3>Course Curriculum</h3>
+            <ol>
+                <li>Lesson 1: Introduction to data mining</li>
+                <li>Lesson 2: Introduction to Data Warehousing
+                    </li>
+                <li>Lesson 3:OLAP
+                  </li>
+                <li>Lesson 4:Trends in Data Warehousing</li>
+                <li>Lesson 5: Conclusion</li>
+            </ol>
+            <form action="enroll.php" method="POST">
+                <input type="hidden" name="course_id" value="123">
+                <button type="submit">Enroll Now</button>
+            </form>
+            </main>
+
+            <footer>
+                <p>&copy; My Eduford Website 2023</p>
+            </footer>
+        
+            </body>
+        </html>

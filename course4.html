@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>College Website</title>
+        <link rel="stylesheet" href="c1style.css">
+    </head>
+    <body>
+       <section class="header">
+           <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+            </div>
+           </nav>
+           <main>
+            <div id="myText"></div>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" >
+         </script>
+                <script src=https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js></script>
+                    </script>
+                    <script>
+                        var text=document.getElementById("myText");
+                        var typewriter=new Typewriter(text,{
+                            loop:true
+                        });
+                        typewriter.typeString('Java Programming' )
+                        .pauseFor(1000)
+                        .start();
+            </script>
+            <img src="images/java.webp" alt="Course Image">
+            <p>This is a description of the course.</p>
+            <br>
+            <p>Introduction to Java
+
+                Java is a free and open source high level programming language. It is simple as well as object oriented language.
+                 Till date, the Java platform has attracted more than 6.5 million software developers. Java Platform, Standard Edition (Java SE) lets you develop and deploy Java applications on desktops and servers, as well as today's demanding Embedded and Real-Time environments.  
+                
+    From laptops to mobile phones, game consoles to scientific supercomputers, music players to the Internet, Set-top boxes to printers, web-cams to medical devices - that is a huge list, Java is everywhere!!!!!
+                </p>
+            <ul>
+                <li>Duration: 6 weeks</li>
+                <li>Instructor: John Doe</li>
+                <li>Level: Intermediate</li>
+                <li>Price: $100</li>
+            </ul>
+            <h3>Course Curriculum</h3>
+            <ol>
+                <li>Lesson 1: Introduction</li>
+                <li>Lesson 2: variables in Java</li>
+                <li>Lesson 3: Object oriented programming 2</li>
+                <li>Lesson 4: Arrays inJAva</li>
+                <li>Lesson 5: Conclusion</li>
+            </ol>
+            <form action="enroll.php" method="POST">
+                <input type="hidden" name="course_id" value="123">
+                <button type="submit">Enroll Now</button>
+            </form>
+            </main>
+
+            <footer>
+                <p>&copy; My Eduford Website 2023</p>
+            </footer>
+        
+            </body>
+        </html>
